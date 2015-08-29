@@ -1,0 +1,92 @@
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css"></link>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+  </script>
+
+  <script>
+    $(document).ready(function() {
+    //input jquery here:
+
+    $("button").css("padding", "10px");
+    $("button").click(function() {
+      //remove current grid
+      $("table").empty();
+
+      //Ask user for the number of columns and rows
+      var colNum = prompt("What resolution do you want?");
+      var rowNum = colNum;
+
+      //create string "colNum_string"
+      //it will begin with <tr> and end with </tr>
+      //each loop will add a new column <td></td>
+      var colNum_string = "<tr>";
+      for (var i = 0; i < colNum; i++) {
+        colNum_string += "<td></td>";
+      };
+      colNum_string += "</tr>";
+
+      //create table
+      for (var j = 0; j < rowNum; j++) {
+        $("table").append(colNum_string);
+      };
+
+
+      //css to set height, width
+      $("td").css("width", "5px");
+      $("td").css("height", "5px");
+
+      //css sorts out the borders between the cells
+      $("td").css("border", "none");
+      $("td").css("border-collapse", "collapse");
+      $("table").css("border", "black solid 1px");
+      $("table").css("border-collapse", "collapse");
+
+      //mouse enters a div, the background colour
+      //will be changed to black
+      $("td").mouseenter(function() {
+        $(this).css("background-color", "black");
+      });
+
+    });
+
+  });
+</script>
+  <title>Etch-A-Sketch</title>
+</head>
+<body>
+  <div id="usable">
+
+    <div id="nav">
+      <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../photo-a-day.html">Photo a Day</a></li>
+          <li><a href="../creations.html">Creations</a></li>
+      </ul>
+    </div>
+    <div id="under-nav">
+      <div id="follow-buttons">
+       <ul>
+        <li><a href="https://twitter.com/JMurphyWeb?lang=en" target="_blank" title="Twitter"><img src="../follow-icons/twitter.png"></a></li>
+
+        <li><a href="https://github.com/JMurphyWeb" target="_blank" title="GitHub"><img src="../follow-icons/github.png"></a></li>
+
+        <li><a href="mailto:jmurphyweb@gmail.com" target="_blank" title="Email"><img src="../follow-icons/email.png"></a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="page-description">
+        <h3>Etch-A-Sketch</h3>
+          <p></p>
+  </div>
+
+  <button style="left:100px;">New Grid</button>
+  <table width="500px" height="500px" style="margin-bottom: 200px"></table>
+
+  </div>
+</body>
+</html>
