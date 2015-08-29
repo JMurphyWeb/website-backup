@@ -1,0 +1,31 @@
+.object {
+	border-top: solid grey 2px;
+	height: 200px;
+	width: 100%;
+  -webkit-filter: opacity(40%);
+  -webkit-transition: all 0.5s;
+}
+.object-image{
+  height: 160px;
+  width: 200px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.object-description{
+  height: 180px;
+  width: 48%;
+  float: right;
+  margin-top: 5px; 
+  line-height: 0px;
+}
+
+.small-image {
+  margin-left: 10%;
+}
+
+.object:hover{
+  -webkit-filter: none;
+}

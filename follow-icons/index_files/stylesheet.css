@@ -1,0 +1,102 @@
+*{
+  color: #B2B2B2;
+  font-family: helvetica neue;
+}
+#usable{
+  position: absolute;
+  width: 500px;
+  height: 900px;
+  margin-left: 25%;
+  margin-right: auto;
+}
+
+#nav {
+  margin-top: 20px;
+  border-top: solid #E6E6E6 1px;
+  border-bottom: solid #E6E6E6 1px;
+  height: 50px;
+}
+
+.nav_button{
+  position: absolute;
+  display: inline;
+  height: 50px;
+  left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+
+#nav{
+  position: relative;
+}
+
+#nav li{
+  list-style-type: none;
+  margin-top: 12px;
+}
+.nav_button:hover{
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#nav li:hover{
+  color: black;
+}
+
+
+/*Navbar buttons position*/
+#blog_nav {
+    
+}
+#photo_nav {
+    left: 80px;
+}
+#portfolio_nav {
+    left: 220px;
+}
+
+#content{
+  position: relative;
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  top: 35px;
+  color: #A1A1A1;
+}
+
+#date{
+  color: #E6E6E6;
+  font-size: 12px;
+  margin-top: -18px;
+  margin-bottom: -10px;
+}
+
+#content p{
+  line-height: 25px;  
+}
+
+
+#follow {
+  position: relative;
+  float: right;
+  border: solid;
+}
+
+ul.follow-buttons{
+  list-style: none;
+  float: right;
+  margin-top: 5px;
+  //padding-right: 10px;
+  width:  80px;
+  border-bottom: solid #E6E6E6 1px;
+}
+
+ul.follow-buttons li{
+  display: inline;
+  //padding-left: 5px;
+}
+
+ul.follow-buttons img {
+  max-height: 23px;
+}
+
