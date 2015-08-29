@@ -1,0 +1,48 @@
+//slider css
+
+.wrapper {
+  margin: auto;
+  position: absolute;
+}
+
+#slider {
+  position: relative;
+  width: 678px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-left: -100px;
+  margin-top: 50px;
+}
+
+#slider > img {
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  max-width: 800px;
+  max-height: 500px;
+  display: none;
+}
+
+.scroll_buttons {
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: none;
+  border-radius: 2px;
+  margin: 15px auto;
+  border-top: #E6E6E6 solid 1px;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+.scroll_buttons:hover {
+  border-top: black solid 1px;
+  color: black;
+}
+
+#left_button{
+  float: left;
+}
+#right_button{
+  float: right;
+}
